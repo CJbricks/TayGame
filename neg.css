@@ -79,7 +79,7 @@ html {
   .yesbox {
     display: none;
     text-align: center;
-    top: 300px;
+    top: 500px;
     left: -800px;
     position: absolute;
     background-color: green;

@@ -30,13 +30,13 @@ $(document).ready(function(){
 
 function inputCheckTwo(){
   const inputTwo =  document.getElementById('textbox-two').value.toLowerCase();
-   return inputTwo.replace(/[^a-zA-Z0-9 ]/g, '') == 'ken griffey jr' ? console.log('True') : console.log("False");
+   return inputTwo.replace(/[^a-zA-Z0-9 ]/g, '') == 'jacob degrom' ? console.log('True') : console.log("False");
    
  };
 
   function answerTwo(){
     const ansInputTwo = document.getElementById('textbox-two').value.toLowerCase();
-      return ansInputTwo.replace(/[^a-zA-Z0-9 ]/g, '') == 'ken griffey jr' ? document.getElementById('yesbox-two').style.display= 'block' : document.getElementById('nobox-two').style.display= 'block';
+      return ansInputTwo.replace(/[^a-zA-Z0-9 ]/g, '') == 'jacob degrom' ? document.getElementById('yesbox-two').style.display= 'block' : document.getElementById('nobox-two').style.display= 'block';
   };
   
 
