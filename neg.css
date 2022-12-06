@@ -1,10 +1,11 @@
 
 
 html {
-  background-color: #f7d7b5;
+  background-color: whitesmoke;
   align-items: center;
   background-size: cover;
-  background-image: url('images/peach.svg');
+  
+  font-family: 'press start 2p', Arial, Helvetica, sans-serif;
   
 }
 
@@ -52,7 +53,6 @@ html {
   .blist {
     height: 400px;
     width: 700px;
-    
     border: 2px solid #351c75;
     margin-top: 25px;
     margin-left: 250px;
@@ -65,47 +65,37 @@ html {
     box-shadow: -30px 16px #351c75;
   }
 
-  .resultbox {
-    font-size: 150px;
-    text-align: center;
-    color: red;
-    position: absolute;
-    right: 550px;
-    top: -150px;
-    border-radius: 5px; 
+  .counter {
     
-  }
-  
-  .yesbox {
-    display: none;
+    height: 250px;
+    width: 700px;
+    border: 2px solid #351c75;
+    margin-top: 25px;
+    margin-left: 450px;
+    margin-bottom: 100px;
+    object-fit: fit;
+    background-color: whitesmoke;
+    
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* Text decoration for modal box  */
     text-align: center;
-    top: 500px;
-    left: -800px;
-    position: absolute;
-    background-color: green;
-    border-radius: 5px;
-    padding: 10px;
-    height: 100px;
-    width: 100px;
+    font-size: 36px;
+    font-family: 'press start 2p', helvetica, sans serif;
+    color: #351c75;
+     
+  }
 
-  }
-  
-  .nobox {
+  .score-box {
     display: none;
-    text-align: center;
-    top: 300px;
-    left: -800px;
     position: absolute;
-    background-color: red;
-    border-radius: 5px;
-    padding: 10px;
-    height: 100px;
-    width: 100px;
-    
   }
+
+
   
   button {
-    background-color: #fce5cd;
+    background-color: whitesmoke;
     color: #351c75;
     margin-top: 35px;
     margin-left: 100px;
@@ -166,42 +156,41 @@ html {
   box-shadow: -30px 16px #351c75;
 }
 
-.resultbox-two {
-  font-size: 150px;
+.quizbox-two {
   text-align: center;
+  margin-top: 10px;
+  margin-left: 50px;
   color: red;
-  position: absolute;
-  right: 550px;
-  top: -150px;
-  border-radius: 5px; 
-  
+  display: none;
 }
 
-.yesbox-two {
-  display: none;
-  text-align: center;
-  top: 900px;
-  left: -800px;
-  position: absolute;
-  background-color: green;
-  border-radius: 5px;
-  padding: 10px;
-  height: 100px;
-  width: 100px;
-
+.letters,.letters-three {
+  margin-left: 350px;
 }
 
-.nobox-two {
-  display: none;
-  text-align: center;
-  top: 900px;
-  left: -800px;
-  position: absolute;
-  background-color: red;
-  border-radius: 5px;
-  padding: 10px;
-  height: 100px;
-  width: 100px;
-  
+
+
+.image-three {
+height: 400px;
+width: 700px;
+
+border: 2px solid navy;
+margin-top: 75px;
+margin-left: 250px;
+object-fit: fit;
+}
+
+.image-three:hover {
+cursor: pointer;
+border: 2px solid #f7d7b5;
+box-shadow: -30px 16px #351c75;
+}
+
+.quizbox-three {
+text-align: center;
+margin-top: 10px;
+margin-left: 50px;
+color: red;
+display: none;
 }
 

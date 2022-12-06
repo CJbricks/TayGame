@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Never Ending Game.</title>
+    <title>StatSheet</title>
     <link href= "neg.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./neg.js"></script>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     
     
-    <div clas="topbox">
-      <img class="banner animate__animated animate__zoomInDown"     src='/images/Untitled-2.png' />
-      <br>
-      <img class="logounder animate__animated animate__jackInTheBox" src="/images/wavelogo.png" />
-    </div>
+  
 </head>
 
 <body>
+  <div clas="topbox">
+    <img class="banner animate__animated animate__zoomInDown"     src='/images/Untitled-2.png' />
+    <br>
+    <img class="logounder animate__animated animate__jackInTheBox" src="/images/wavelogo.png" />
+  </div>
 
+
+<!--first sheet and image box-->
     <div class="quizbox">
       
         <img 
@@ -39,22 +43,12 @@
           <label class="label" for="textbox"></label>
           <input class ="letters" type="text" id="textbox" name="textbox" value=""></input>
           <button  onClick="inputCheck(); answer();"type="button" id="answerbutton" >Final Answer</button>
-          <button  type="button" id="clearbutton" onClick="clearButton()">Try again</button>
+        <!--  <button  type="button" id="clearbutton" onClick="clearButton()">Try again</button> -->
         </div>
-        
-     
-       
-        
-        <div class="resultbox" id="resultbox">
-          <h1 id="yesbox" class="yesbox">
-              <br> 
-          </h1>
-          <h1 id="nobox" class="nobox">
-              <br> 
-          </h1>
     </div>
 
-    <div class="quizbox-two">
+<!--Second box populates upon correct answer-->
+    <div class="quizbox-two" id="quizbox-two">
       
       <img 
       onClick="moveTwo();"
@@ -71,22 +65,49 @@
         <label class="label-two" for="textbox-two"></label>
         <input class ="letters-two" type="text" id="textbox-two" name="textbox-two" value=""></input>
         <button class="button-two" onClick="inputCheckTwo(); answerTwo();"type="button" id="answerbutton-two"  >Final Answer</button>
-        <button class="button-two" type="button" id="clearbutton-two" onClick="buttonTwo()">Try again</button>
+       <!-- <button class="button-two" type="button" id="clearbutton-two" onClick="buttonTwo()">Try again</button> -->
       </div>
-      
-      <div class="resultbox-two" id="resultbox-two">
-        <h1 id="yesbox-two" class="yesbox-two">
-            <br> 
-        </h1>
-        <h1 id="nobox-two" class="nobox-two">
-            <br> 
-        </h1>
+    </div>
+
+
+<div class="quizbox-three" id="quizbox-three">
+    <img 
+    onClick="moveThree();"
+    class="image-three"
+    id="image-three"
+    src='/images/sheetthree.png';
+     />
+    <br>
+    <br>
+    
+    <br>
+    <div>
+      <label class="label" for="textbox"></label>
+      <input class ="letters-three" type="text" id="textbox-three" name="textbox" value=""></input>
+      <button  onClick="inputCheckThree(); answerThree();"type="button" id="answerbutton-three" >Final Answer</button>
+    <!-- <button  type="button" id="clearbuttonThree" onClick="clearButtonThree()">Try again</button> -->
+    </div>
+</div>
+
+<div class="score-box" id="score-box">
+  <div class="counter animate__animated animate__bounceIn">
+    <h1 id="score">
+      <br>
+      <script>
+        `${counter}`
+      </script>
+    </h1>
   </div>
+</div>
+
+  
+      
+    
 
         
         
     
 </body>
-<footer><div class="footer animate__animated animate__backInLeft"><p>The rules are simple I give you a reference sheet and you guess the person!</p></div></footer>
+<footer><div class="footer animate__animated animate__backInLeft"><p><a href="https://www.youtube.com/watch?v=mpRQ35kUTdA">Here's</a> how you play.</p></div></footer>
 
 </html>
