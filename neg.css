@@ -18,10 +18,10 @@ a:hover {
 }
 
 .center-body {
-  width: 1000px;
-  background-color: antiquewhite;
-  margin-left: 250px;
-  border: 1px solid #351c75;
+  width: 75%;
+  background-color: whitesmoke;
+  margin-left: 12%;
+  
   text-align: center;
 }
 
@@ -39,9 +39,9 @@ a:hover {
 
 
 .banner {
-  height: 550;
-  width: 850px;
-  margin-left: 60px;
+  height: 55%;
+  width: 75%;
+  margin-left: 50px;
   display: flexbox;
 }
 
@@ -85,28 +85,30 @@ a:hover {
     height: 250px;
     width: 700px;
     border: 2px solid #351c75;
-    margin-top: 25px;
-    margin-left: 450px;
-    margin-bottom: 100px;
+    top: -550px;
+    margin-left: 22%;
     object-fit: fit;
     background-color: whitesmoke;
-    
+    position: absolute;
+    display: block;
     padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px;
     /* Text decoration for modal box  */
-    text-align: center;
-    font-size: 36px;
-    font-family: 'press start 2p', helvetica, sans serif;
-    color: #351c75;
-     
+   
+    
   }
 
   .score-box {
-    display: none;
-    position: relative;
-    right: 315px;
-    margin-top: 100px;
+    display: block;
+    position: absolute;
+    top: 95%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'press start 2p', helvetica, sans serif;
+    color: red;
+    text-align: center;
   }
 
 

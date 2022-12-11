@@ -12,7 +12,7 @@ $(document).ready(function(){
 /* log to console to check if input is working on button */
 function inputCheck(){
   const input =  document.getElementById('textbox').value.toLowerCase();
-   return input == 'carlos correa' ? console.log('True') : console.log("False");
+   return input == 'christian yelich' ? console.log('True') : console.log("False");
    
  };
 
@@ -20,10 +20,10 @@ function inputCheck(){
   function answer(){
     
     const ansInput = document.getElementById('textbox').value.toLowerCase();
-     if (ansInput !== 'carlos correa') {
+     if (ansInput !== 'christian yelich') {
       document.getElementById('image').style.border= '2px solid red';
       } else {
-        counter ++
+        counter ++;
       }
       console.log(counter)
   };
@@ -48,13 +48,13 @@ function clearButton() {
 /* Second quiz box */
 function inputCheckTwo(){
   const inputTwo =  document.getElementById('textbox-two').value.toLowerCase();
-   return inputTwo.replace(/[^a-zA-Z0-9 ]/g, '') == 'jose iglesias' ? console.log('True') : console.log("False");
+   return inputTwo.replace(/[^a-zA-Z0-9 ]/g, '') == 'jackie robinson' ? console.log('True') : console.log("False");
    
  };
 
   function answerTwo(){
     const ansInputTwo = document.getElementById('textbox-two').value.toLowerCase();
-      if (ansInputTwo.replace(/[^a-zA-Z0-9 ]/g, '') !== 'jose iglesias') { 
+      if (ansInputTwo.replace(/[^a-zA-Z0-9 ]/g, '') !== 'jackie robinson') { 
         document.getElementById('image-two').style.border= '2px solid red';
        } else {
         counter++;
@@ -80,23 +80,23 @@ function buttonTwo() {
 /* Third quiz box */
 function inputCheckThree(){
   const inputThree =  document.getElementById('textbox-three').value.toLowerCase();
-   return inputThree.replace(/[^a-zA-Z0-9 ]/g, '') == 'elvis andrus' ? console.log('True') : console.log("False");
+   return inputThree.replace(/[^a-zA-Z0-9 ]/g, '') == 'randal grichuk' ? console.log('True') : console.log("False");
    
  };
 
   function answerThree(){
     const ansInputThree = document.getElementById('textbox-three').value.toLowerCase();
     
-      if (ansInputThree.replace(/[^a-zA-Z0-9 ]/g, '') !== 'elvis andrus') {
+      if (ansInputThree.replace(/[^a-zA-Z0-9 ]/g, '') !== 'randal grichuk') {
         document.getElementById('image-three').style.border= "2px solid red";
 
       } else { 
          counter++
          document.getElementById('score-box').style.display= "block";
        }
-       let counterMessage = ` Let's go! Score: ${counter} `;
-       console.log(counter)
-       document.getElementById('score').innerHTML= counterMessage;
+       let counterMessage = `Score: ${counter}`;
+       console.log(counter);
+       document.getElementById('score-box').innerHTML= counterMessage;
   };
   
   
