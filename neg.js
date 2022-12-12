@@ -1,5 +1,6 @@
 let counter = 0;
 let scoreBox = true;
+let errorMessage = "OoOoOoOooops";
 
 /* animating.css jquery for buttons */
 $(document).ready(function(){
@@ -8,13 +9,23 @@ $(document).ready(function(){
   })
 });
 
+/* Function to check if scoreBox should be displayed and then generating the counter */
+
+function createCounter(){
+  let counterMessage = `Score: ${counter}`;
+  if (scoreBox = true){
+    document.getElementById('score-box').innerHTML= counterMessage;
+  } else {
+    document.getElementById('score-box').innerHTML= errorMessage;
+  };
+};
+
 
 /* First quiz box */
 /* log to console to check if input is working on button */
 function inputCheck(){
   const input =  document.getElementById('textbox').value.toLowerCase();
    return input == 'todd helton' ? console.log('True') : console.log("False");
-   
  };
 
  /* Checks answer and adds to counter move to next quizbox */
@@ -28,6 +39,7 @@ function inputCheck(){
         document.getElementById('image').style.border= '2px solid green';
       }
       console.log(counter)
+      createCounter();
   };
 
   function nextBox() {
@@ -63,6 +75,7 @@ function inputCheckTwo(){
         document.getElementById('image-two').style.border= '2px solid green';
        }
        console.log(counter)
+       createCounter();
        
   };
 
@@ -87,6 +100,8 @@ function inputCheckThree(){
    
  };
 
+
+ /* generates counter after checking third score */ 
   function answerThree(){
     const ansInputThree = document.getElementById('textbox-three').value.toLowerCase();
     
@@ -98,9 +113,9 @@ function inputCheckThree(){
          document.getElementById('score-box').style.display= "block";
          document.getElementById('image-three').style.border= '2px solid green';
        }
-       let counterMessage = `Score: ${counter}`;
        console.log(counter);
-       document.getElementById('score-box').innerHTML= counterMessage;
+       createCounter();
+       
   };
   
   
