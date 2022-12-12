@@ -1,4 +1,5 @@
 let counter = 0;
+let scoreBox = true;
 
 /* animating.css jquery for buttons */
 $(document).ready(function(){
@@ -12,7 +13,7 @@ $(document).ready(function(){
 /* log to console to check if input is working on button */
 function inputCheck(){
   const input =  document.getElementById('textbox').value.toLowerCase();
-   return input == 'christian yelich' ? console.log('True') : console.log("False");
+   return input == 'todd helton' ? console.log('True') : console.log("False");
    
  };
 
@@ -20,10 +21,11 @@ function inputCheck(){
   function answer(){
     
     const ansInput = document.getElementById('textbox').value.toLowerCase();
-     if (ansInput !== 'christian yelich') {
+     if (ansInput !== 'todd helton') {
       document.getElementById('image').style.border= '2px solid red';
       } else {
         counter ++;
+        document.getElementById('image').style.border= '2px solid green';
       }
       console.log(counter)
   };
@@ -48,16 +50,17 @@ function clearButton() {
 /* Second quiz box */
 function inputCheckTwo(){
   const inputTwo =  document.getElementById('textbox-two').value.toLowerCase();
-   return inputTwo.replace(/[^a-zA-Z0-9 ]/g, '') == 'jackie robinson' ? console.log('True') : console.log("False");
+   return inputTwo.replace(/[^a-zA-Z0-9 ]/g, '') == 'german marquez' ? console.log('True') : console.log("False");
    
  };
 
   function answerTwo(){
     const ansInputTwo = document.getElementById('textbox-two').value.toLowerCase();
-      if (ansInputTwo.replace(/[^a-zA-Z0-9 ]/g, '') !== 'jackie robinson') { 
+      if (ansInputTwo.replace(/[^a-zA-Z0-9 ]/g, '') !== 'german marquez') { 
         document.getElementById('image-two').style.border= '2px solid red';
        } else {
         counter++;
+        document.getElementById('image-two').style.border= '2px solid green';
        }
        console.log(counter)
        
@@ -80,19 +83,20 @@ function buttonTwo() {
 /* Third quiz box */
 function inputCheckThree(){
   const inputThree =  document.getElementById('textbox-three').value.toLowerCase();
-   return inputThree.replace(/[^a-zA-Z0-9 ]/g, '') == 'randal grichuk' ? console.log('True') : console.log("False");
+   return inputThree.replace(/[^a-zA-Z0-9 ]/g, '') == 'troy tulowitzki' ? console.log('True') : console.log("False");
    
  };
 
   function answerThree(){
     const ansInputThree = document.getElementById('textbox-three').value.toLowerCase();
     
-      if (ansInputThree.replace(/[^a-zA-Z0-9 ]/g, '') !== 'randal grichuk') {
+      if (ansInputThree.replace(/[^a-zA-Z0-9 ]/g, '') !== 'troy tulowitzki') {
         document.getElementById('image-three').style.border= "2px solid red";
 
       } else { 
          counter++
          document.getElementById('score-box').style.display= "block";
+         document.getElementById('image-three').style.border= '2px solid green';
        }
        let counterMessage = `Score: ${counter}`;
        console.log(counter);
