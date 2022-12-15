@@ -39,17 +39,9 @@ a:hover {
 
 
 .banner {
-  height: 55%;
-  width: 75%;
-  margin-left: 50px;
-  display: flexbox;
-}
-
-.logounder {
-  height: 250px;
-  width: 250px;
-  margin-top: 150px;
-  margin-left: 300px;
+  height: 75%;
+  width: 85%;
+  margin-bottom: 3%;
   display: flexbox;
 }
 
@@ -80,24 +72,6 @@ a:hover {
     box-shadow: -30px 16px #351c75;
   }
 
-  .counter {
-    
-    height: 250px;
-    width: 800px;
-    border: 2px solid #351c75;
-    top: -550px;
-    margin-left: 18%;
-    object-fit: fit;
-    background-color: whitesmoke;
-    position: absolute;
-    display: block;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    /* Text decoration for modal box  */
-   
-    
-  }
 
   .score-box {
     display: block;
@@ -116,14 +90,14 @@ a:hover {
   button {
     background-color: whitesmoke;
     color: #351c75;
-    margin-top: 35px;
-    margin-left: 100px;
-    margin-right:50px;
     border: 2px solid #351c75;
     height: 35px;
     width: 125px;
     font-size: 16px;
     font-weight: 600;
+    margin-right: 5%;
+    
+    
     
   }
   button:hover {
@@ -153,12 +127,6 @@ a:hover {
     padding: 15px;
   }
 
-  .letters,.letters-two {
-    margin-left: 350px;
-  }
-
-
-
  .image-two {
     height: 400px;
     width: 800px;
@@ -181,8 +149,10 @@ a:hover {
   display: none;
 }
 
-.letters,.letters-three {
-  margin-left: 350px;
+.letters,.letters-two, .letters-three {
+ margin-left: 10%;
+ margin-right: 5%;
+ 
 }
 
 
@@ -208,4 +178,25 @@ margin-left: 50px;
 color: red;
 display: none;
 }
+
+
+.avatar-one, .avatar-two, .avatar-three {
+  height: 40%;
+  width: 30%;
+  justify-content: center;
+  display: inline-flex;
+  
+}
+
+.avatar-one-img, .avatar-two-img, .avatar-three-img {
+  height: 50%;
+  width: 50%;
+  display: inline-flex;
+  margin-top: 5px;
+  margin-right: 10%;
+  
+  border-radius: 5px;
+  padding: 5px;
+}
+
 

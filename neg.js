@@ -2,6 +2,10 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
+let keyOne = 'mike trout';
+let keyTwo = 'dexter fowler';
+let keyThree = 'cal ripken jr';
+
 /* animating.css jquery for buttons */
 $(document).ready(function(){
   $("button").hover(function(){
@@ -25,14 +29,14 @@ function createCounter(){
 /* log to console to check if input is working on button */
 function inputCheck(){
   const input =  document.getElementById('textbox').value.toLowerCase();
-   return input == 'todd helton' ? console.log('True') : console.log("False");
+   return input == keyOne ? console.log('True') : console.log("False");
  };
 
  /* Checks answer and adds to counter move to next quizbox */
   function answer(){
     
     const ansInput = document.getElementById('textbox').value.toLowerCase();
-     if (ansInput !== 'todd helton') {
+     if (ansInput !== keyOne) {
       document.getElementById('image').style.border= '2px solid red';
       } else {
         counter ++;
@@ -62,13 +66,13 @@ function clearButton() {
 /* Second quiz box */
 function inputCheckTwo(){
   const inputTwo =  document.getElementById('textbox-two').value.toLowerCase();
-   return inputTwo.replace(/[^a-zA-Z0-9 ]/g, '') == 'german marquez' ? console.log('True') : console.log("False");
+   return inputTwo.replace(/[^a-zA-Z0-9 ]/g, '') == keyTwo ? console.log('True') : console.log("False");
    
  };
 
   function answerTwo(){
     const ansInputTwo = document.getElementById('textbox-two').value.toLowerCase();
-      if (ansInputTwo.replace(/[^a-zA-Z0-9 ]/g, '') !== 'german marquez') { 
+      if (ansInputTwo.replace(/[^a-zA-Z0-9 ]/g, '') !== keyTwo) { 
         document.getElementById('image-two').style.border= '2px solid red';
        } else {
         counter++;
@@ -96,7 +100,7 @@ function buttonTwo() {
 /* Third quiz box */
 function inputCheckThree(){
   const inputThree =  document.getElementById('textbox-three').value.toLowerCase();
-   return inputThree.replace(/[^a-zA-Z0-9 ]/g, '') == 'troy tulowitzki' ? console.log('True') : console.log("False");
+   return inputThree.replace(/[^a-zA-Z0-9 ]/g, '') == keyThree ? console.log('True') : console.log("False");
    
  };
 
@@ -105,7 +109,7 @@ function inputCheckThree(){
   function answerThree(){
     const ansInputThree = document.getElementById('textbox-three').value.toLowerCase();
     
-      if (ansInputThree.replace(/[^a-zA-Z0-9 ]/g, '') !== 'troy tulowitzki') {
+      if (ansInputThree.replace(/[^a-zA-Z0-9 ]/g, '') !== keyThree) {
         document.getElementById('image-three').style.border= "2px solid red";
 
       } else { 
