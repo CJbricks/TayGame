@@ -13,6 +13,50 @@ $(document).ready(function(){
   })
 });
 
+$(document).ready(function(){
+  $(".avatar-one").hover(function(){
+    $(this).addClass("animate__animated animate__tada");
+  })
+});
+
+$(document).ready(function(){
+  $(".avatar-two").hover(function(){
+    $(this).addClass("animate__animated animate__tada");
+  })
+});
+
+$(document).ready(function(){
+  $(".avatar-three").hover(function(){
+    $(this).addClass("animate__animated animate__tada");
+  })
+});
+
+/* Function to change src of hint boxes  */
+/*let hintOne = document.getElementById('avatar-one-id');*/
+let hintAnswerOne = './images/trout.png';
+let hintAnswerTwo = "./images/fowler.png";
+let hintAnswerThree = './images/ripken.jpeg';
+
+function hintOne(){
+  document.getElementById('avatar-one-id').src = hintAnswerOne;
+  counter--;
+  console.log(counter);
+}
+
+function hintTwo(){
+  document.getElementById('avatar-two-id').src = hintAnswerTwo;
+  counter--;
+  console.log(counter);
+}
+
+function hintThree(){
+  document.getElementById('avatar-three-id').src = hintAnswerThree;
+  counter--;
+  console.log(counter);
+}
+
+
+
 /* Function to check if scoreBox should be displayed and then generating the counter */
 
 function createCounter(){
@@ -132,3 +176,4 @@ function buttonThree() {
   document.getElementById('nobox-two').style.display = 'none';
   document.getElementById('yesbox-two').style.display = 'none';
 };
+
