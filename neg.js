@@ -83,7 +83,7 @@ function inputCheck(){
      if (ansInput !== keyOne) {
       document.getElementById('image').style.border= '2px solid red';
       } else {
-        counter ++;
+        counter = counter + 2;
         document.getElementById('image').style.border= '2px solid green';
       }
       console.log(counter)
@@ -119,7 +119,7 @@ function inputCheckTwo(){
       if (ansInputTwo.replace(/[^a-zA-Z0-9 ]/g, '') !== keyTwo) { 
         document.getElementById('image-two').style.border= '2px solid red';
        } else {
-        counter++;
+        counter = counter + 2;
         document.getElementById('image-two').style.border= '2px solid green';
        }
        console.log(counter)
@@ -157,7 +157,7 @@ function inputCheckThree(){
         document.getElementById('image-three').style.border= "2px solid red";
 
       } else { 
-         counter++
+        counter = counter + 2;
          document.getElementById('score-box').style.display= "block";
          document.getElementById('image-three').style.border= '2px solid green';
        }
