@@ -2,9 +2,13 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'mike trout';
-let keyTwo = 'dexter fowler';
-let keyThree = 'cal ripken jr';
+let keyOne = 'dansby swanson';
+let keyTwo = 'cody bellinger';
+let keyThree = 'noah syndergaard';
+
+let avOne = './images/hintone.png';
+let avTwo = './images/hinttwo.png';
+let avThree = './images/hintthree.png';
 
 /* animating.css jquery for buttons */
 $(document).ready(function(){
@@ -33,24 +37,22 @@ $(document).ready(function(){
 
 /* Function to change src of hint boxes  */
 /*let hintOne = document.getElementById('avatar-one-id');*/
-let hintAnswerOne = './images/trout.png';
-let hintAnswerTwo = "./images/fowler.png";
-let hintAnswerThree = './images/ripken.jpeg';
+
 
 function hintOne(){
-  document.getElementById('avatar-one-id').src = hintAnswerOne;
+  document.getElementById('avatar-one-id').src = avOne;
   counter--;
   console.log(counter);
 }
 
 function hintTwo(){
-  document.getElementById('avatar-two-id').src = hintAnswerTwo;
+  document.getElementById('avatar-two-id').src = avTwo;
   counter--;
   console.log(counter);
 }
 
 function hintThree(){
-  document.getElementById('avatar-three-id').src = hintAnswerThree;
+  document.getElementById('avatar-three-id').src = avThree;
   counter--;
   console.log(counter);
 }

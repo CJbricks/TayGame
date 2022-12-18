@@ -18,14 +18,7 @@
 </head>
 
 <body>
-  <div class="score-box" id="score-box">
-    <div class="counter animate__animated animate__bounceIn">
-      <h1 id="score">
-        <br>
-       
-      </h1>
-    </div>
-  </div>
+
   
   <div id="" class="side-bar"></div>
   <div class="center-body">
@@ -56,7 +49,7 @@
           <label class="label" for="textbox"></label>
           <input class ="letters" type="text" id="textbox" name="textbox" value="..."></input>
           
-          <button  onClick="inputCheck(); answer(); nextBox();"type="button" id="answerbutton" >Final Answer</button>
+          <button  onClick="inputCheck(); answer(); nextBox();"type="button" id="answerbutton" >Answer</button>
         <!--  <button  type="button" id="clearbutton" onClick="clearButton()">Try again</button> -->
         </div>
     </div>
@@ -76,10 +69,10 @@
       
       <br>
       <div>
-        <div class="avatar-two" id="avatar-two"><img src="./images/avat-id2.png" class="avatar-two-img" id="avatar-two-id" onClick="hintTwo();"></div>
+        <div class="avatar-two" id="avatar-two"><img src="./images/avat-id.png" class="avatar-two-img" id="avatar-two-id" onClick="hintTwo();"></div>
         <label class="label-two" for="textbox-two"></label>
         <input class ="letters-two" type="text" id="textbox-two" name="textbox-two" value=""></input>
-        <button class="button-two" onClick="inputCheckTwo(); answerTwo(); thirdBox();"type="button" id="answerbutton-two"  >Final Answer</button>
+        <button class="button-two" onClick="inputCheckTwo(); answerTwo(); thirdBox();"type="button" id="answerbutton-two"  >Answer</button>
        <!-- <button class="button-two" type="button" id="clearbutton-two" onClick="buttonTwo()">Try again</button> -->
       </div>
     </div>
@@ -100,14 +93,21 @@
       <div class="avatar-three" id="avatar-three"><img src="./images/avat-id.png" class="avatar-three-img" id="avatar-three-id" onClick="hintThree();"></div>
       <label class="label" for="textbox"></label>
       <input class ="letters-three" type="text" id="textbox-three" name="textbox" value=""></input>
-      <button  onClick="inputCheckThree(); answerThree();"type="button" id="answerbutton-three" >Final Answer</button>
+      <button  onClick="inputCheckThree(); answerThree();"type="button" id="answerbutton-three" >Answer</button>
     <!-- <button  type="button" id="clearbuttonThree" onClick="clearButtonThree()">Try again</button> -->
     </div>
 </div>
 
 
 
-  
+<div class="score-box" id="score-box">
+  <div class="counter animate__animated animate__bounceIn">
+    <h1 id="score">
+      <br>
+     
+    </h1>
+  </div>
+</div>
       
     
 

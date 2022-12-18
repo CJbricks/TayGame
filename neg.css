@@ -58,24 +58,25 @@ a:hover {
 
   }
 
-  .blist {
+  .blist, .image-two, .image-three {
     height: 400px;
     width: 800px;
     border: 2px solid #351c75;
     margin-top: 25px;
     object-fit: fit;
+    border-radius: 5px;
+    box-shadow: -15px 8px #351c75;
   }
 
-  .blist:hover {
+  .blist:hover, .image-two:hover, .image-three:hover {
     cursor: pointer;
-    border: 2px solid #f7d7b5;
-    box-shadow: -30px 16px #351c75;
+    border: 2px solid gray;
+    box-shadow: -20px 12px #351c75;
   }
 
 
   .score-box {
     display: block;
-    position: absolute;
     top: 90%;
     width: 100%;
     text-align: center;
@@ -83,6 +84,7 @@ a:hover {
     font-family: 'press start 2p', helvetica, sans serif;
     color: red;
     text-align: center;
+    margin-top: 10%;
   }
 
 
@@ -127,19 +129,7 @@ a:hover {
     padding: 15px;
   }
 
- .image-two {
-    height: 400px;
-    width: 800px;
-    border: 2px solid #351c75;
-    margin-top: 25px;
-    object-fit: fit;
-}
 
-.image-two:hover {
-  cursor: pointer;
-  border: 2px solid #f7d7b5;
-  box-shadow: -30px 16px #351c75;
-}
 
 .quizbox-two {
   text-align: center;
@@ -155,21 +145,6 @@ a:hover {
  
 }
 
-
-
-.image-three {
-  height: 400px;
-  width: 800px;
-  border: 2px solid #351c75;
-  margin-top: 25px;
-  object-fit: fit;
-}
-
-.image-three:hover {
-cursor: pointer;
-border: 2px solid #f7d7b5;
-box-shadow: -30px 16px #351c75;
-}
 
 .quizbox-three {
 text-align: center;
