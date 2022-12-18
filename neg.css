@@ -1,7 +1,7 @@
 
 
 html {
-  background: linear-gradient(to bottom, white 0%, whitesmoke, #fce5cd 100%);
+  background: linear-gradient(to bottom, white 0%, whitesmoke 65%, #fce5cd 90%, #f7d7b5 100%);
   align-items: center;
   background-size: cover;
   
@@ -21,6 +21,7 @@ a:hover {
   width: 75%;
   margin-left: 12%;
   text-align: center;
+  justify-content: center;
 }
 
 .banner {
@@ -32,6 +33,10 @@ a:hover {
 
 .animate__animated.animate__jackInTheBox {
   --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeIn{
+  --animate-duration: 3s;
 }
 
 .quizbox {
@@ -54,8 +59,8 @@ a:hover {
   }
 
   .blist:hover, .image-two:hover, .image-three:hover {
-    cursor: pointer;
-    border: 2px solid #fce5cd;
+    transform: scale(1.15);
+    border: 2px solid whitesmoke;
     box-shadow: -20px 12px #351c75;
   }
 
@@ -107,11 +112,12 @@ a:hover {
     text-align: left;
     margin-left: 15%;
     margin-top: 8.5%;
-    color: #351c75;
+    color: #e69138;
   }
 
   p {
     padding: 15px;
+    
   }
 
 
@@ -154,7 +160,6 @@ display: none;
   display: inline-flex;
   margin-top: 5px;
   margin-right: 10%;
-  
   border-radius: 5px;
   padding: 5px;
 }
