@@ -4,7 +4,6 @@ html {
   background: linear-gradient(to bottom, white 0%, whitesmoke 65%, #fce5cd 90%, #f7d7b5 100%);
   align-items: center;
   background-size: cover;
-  
   font-family: 'press start 2p', Arial, Helvetica, sans-serif;
   
 }
@@ -35,10 +34,6 @@ a:hover {
   --animate-duration: 2s;
 }
 
-.animate__animated.animate__fadeIn{
-  --animate-duration: 3s;
-}
-
 .quizbox {
     text-align: center;
     margin-top: 10px;
@@ -59,9 +54,9 @@ a:hover {
   }
 
   .blist:hover, .image-two:hover, .image-three:hover {
-    transform: scale(1.15);
-    border: 2px solid whitesmoke;
-    box-shadow: -20px 12px #351c75;
+    transform: scale(1.25);
+    border: 2px solid whitesmoke; 
+    box-shadow: -20px 12px 15px -8px #5e44a0; 
   }
 
 

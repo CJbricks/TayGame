@@ -2,9 +2,9 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'dansby swanson';
-let keyTwo = 'cody bellinger';
-let keyThree = 'noah syndergaard';
+let keyOne = 'clayton kershaw';
+let keyTwo = 'matt kemp';
+let keyThree = 'justin turner';
 
 let avOne = './images/hintone.png';
 let avTwo = './images/hinttwo.png';
