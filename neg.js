@@ -2,9 +2,9 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'clayton kershaw';
-let keyTwo = 'matt kemp';
-let keyThree = 'justin turner';
+let keyOne = 'nolan arenado';
+let keyTwo = 'adam wainwright';
+let keyThree = 'willson contreras';
 
 let avOne = './images/hintone.png';
 let avTwo = './images/hinttwo.png';
@@ -83,10 +83,10 @@ function inputCheck(){
     
     const ansInput = document.getElementById('textbox').value.toLowerCase();
      if (ansInput !== keyOne) {
-      document.getElementById('image').style.border= '2px solid red';
+      document.getElementById('image').style.border= '4px solid red';
       } else {
         counter = counter + 2;
-        document.getElementById('image').style.border= '2px solid green';
+        document.getElementById('image').style.border= '4px solid green';
       }
       console.log(counter)
       createCounter();
@@ -94,8 +94,7 @@ function inputCheck(){
 
   function nextBox() {
     let status = true;
-
-    status === true ? document.getElementById('quizbox-two').style.display= 'block' : null;
+      status === true ? document.getElementById('quizbox-two').style.display= 'block' : null;
   }
   
 /* hint */
@@ -119,10 +118,10 @@ function inputCheckTwo(){
   function answerTwo(){
     const ansInputTwo = document.getElementById('textbox-two').value.toLowerCase();
       if (ansInputTwo.replace(/[^a-zA-Z0-9 ]/g, '') !== keyTwo) { 
-        document.getElementById('image-two').style.border= '2px solid red';
+        document.getElementById('image-two').style.border= '4px solid red';
        } else {
         counter = counter + 2;
-        document.getElementById('image-two').style.border= '2px solid green';
+        document.getElementById('image-two').style.border= '4px solid green';
        }
        console.log(counter)
        createCounter();
@@ -156,12 +155,13 @@ function inputCheckThree(){
     const ansInputThree = document.getElementById('textbox-three').value.toLowerCase();
     
       if (ansInputThree.replace(/[^a-zA-Z0-9 ]/g, '') !== keyThree) {
-        document.getElementById('image-three').style.border= "2px solid red";
+        document.getElementById('image-three').style.border= "4px solid red";
 
       } else { 
         counter = counter + 2;
          document.getElementById('score-box').style.display= "block";
-         document.getElementById('image-three').style.border= '2px solid green';
+         document.getElementById('image-three').style.border= '4px solid green';
+         
        }
        console.log(counter);
        createCounter();
