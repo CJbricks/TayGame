@@ -2,9 +2,9 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'nolan arenado';
-let keyTwo = 'adam wainwright';
-let keyThree = 'willson contreras';
+let keyOne = 'justin upton';
+let keyTwo = 'eugenio suarez';
+let keyThree = 'robbie ray';
 
 let avOne = './images/hintone.png';
 let avTwo = './images/hinttwo.png';
