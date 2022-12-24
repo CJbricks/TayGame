@@ -2,13 +2,13 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'justin upton';
-let keyTwo = 'eugenio suarez';
-let keyThree = 'robbie ray';
+let keyOne = 'rickey henderson';
+let keyTwo = 'steve christmas';
+let keyThree = 'jt snow';
 
-let avOne = './images/hintone.png';
-let avTwo = './images/hinttwo.png';
-let avThree = './images/hintthree.png';
+let avOne = './images/hintone.jpeg';
+let avTwo = './images/hinttwo.jpeg';
+let avThree = './images/hintthree.jpeg';
 
 /* animating.css jquery for buttons */
 $(document).ready(function(){
