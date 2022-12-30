@@ -41,18 +41,21 @@ $(document).ready(function(){
 
 function hintOne(){
   document.getElementById('avatar-one-id').src = avOne;
+  document.getElementById('avatar-one-img').style.transform = "scale(2.0)";
   counter--;
   console.log(counter);
 }
 
 function hintTwo(){
   document.getElementById('avatar-two-id').src = avTwo;
+  document.getElementById('avatar-two-img').style.transform = "scale(2.0)";
   counter--;
   console.log(counter);
 }
 
 function hintThree(){
   document.getElementById('avatar-three-id').src = avThree;
+  document.getElementById('avatar-three-img').style.transform = "scale(2.0)";
   counter--;
   console.log(counter);
 }
