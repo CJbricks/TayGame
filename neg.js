@@ -2,13 +2,13 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'rickey henderson';
-let keyTwo = 'steve christmas';
-let keyThree = 'jt snow';
+let keyOne = 'alex bregman';
+let keyTwo = 'carlos correa';
+let keyThree = 'jose altuve';
 
-let avOne = './images/hintone.jpeg';
-let avTwo = './images/hinttwo.jpeg';
-let avThree = './images/hintthree.jpeg';
+let avOne = './images/hintone.png';
+let avTwo = './images/hinttwo.png';
+let avThree = './images/hintthree.png';
 
 /* animating.css jquery for buttons */
 $(document).ready(function(){
@@ -41,21 +41,18 @@ $(document).ready(function(){
 
 function hintOne(){
   document.getElementById('avatar-one-id').src = avOne;
-  document.getElementById('avatar-one-img').style.transform = "scale(2.0)";
   counter--;
   console.log(counter);
 }
 
 function hintTwo(){
   document.getElementById('avatar-two-id').src = avTwo;
-  document.getElementById('avatar-two-img').style.transform = "scale(2.0)";
   counter--;
   console.log(counter);
 }
 
 function hintThree(){
   document.getElementById('avatar-three-id').src = avThree;
-  document.getElementById('avatar-three-img').style.transform = "scale(2.0)";
   counter--;
   console.log(counter);
 }
