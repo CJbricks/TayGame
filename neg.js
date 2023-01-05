@@ -2,9 +2,9 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'alex bregman';
-let keyTwo = 'carlos correa';
-let keyThree = 'jose altuve';
+let keyOne = 'shohei ohtani';
+let keyTwo = 'mike trout';
+let keyThree = 'shohei ohtani';
 
 let avOne = './images/hintone.png';
 let avTwo = './images/hinttwo.png';
