@@ -2,9 +2,9 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'shohei ohtani';
-let keyTwo = 'mike trout';
-let keyThree = 'shohei ohtani';
+let keyOne = 'max scherzer';
+let keyTwo = 'francisco lindor';
+let keyThree = 'pete alonso';
 
 let avOne = './images/hintone.png';
 let avTwo = './images/hinttwo.png';
@@ -35,26 +35,41 @@ $(document).ready(function(){
   })
 });
 
+/* Jquery for enlarging avatar when clicked */
+
+$(document).ready(function(){
+  $(".avatar-one-img").click(function(){
+    $(this).css("transform", "scale(1.5)")
+  })
+})
+
+$(document).ready(function(){
+  $(".avatar-two-img").click(function(){
+    $(this).css("transform", "scale(1.5)")
+  })
+})
+
+$(document).ready(function(){
+  $(".avatar-three-img").click(function(){
+    $(this).css("transform", "scale(1.5)")
+  })
+})
+
 /* Function to change src of hint boxes  */
 /*let hintOne = document.getElementById('avatar-one-id');*/
 
 
 function hintOne(){
   document.getElementById('avatar-one-id').src = avOne;
-  counter--;
-  console.log(counter);
+  
 }
 
 function hintTwo(){
   document.getElementById('avatar-two-id').src = avTwo;
-  counter--;
-  console.log(counter);
 }
 
 function hintThree(){
   document.getElementById('avatar-three-id').src = avThree;
-  counter--;
-  console.log(counter);
 }
 
 
@@ -85,7 +100,7 @@ function inputCheck(){
      if (ansInput !== keyOne) {
       document.getElementById('image').style.border= '4px solid red';
       } else {
-        counter = counter + 2;
+        counter = counter + 1;
         document.getElementById('image').style.border= '4px solid green';
       }
       console.log(counter)
@@ -120,7 +135,7 @@ function inputCheckTwo(){
       if (ansInputTwo.replace(/[^a-zA-Z0-9 ]/g, '') !== keyTwo) { 
         document.getElementById('image-two').style.border= '4px solid red';
        } else {
-        counter = counter + 2;
+        counter = counter + 1;
         document.getElementById('image-two').style.border= '4px solid green';
        }
        console.log(counter)
@@ -158,7 +173,7 @@ function inputCheckThree(){
         document.getElementById('image-three').style.border= "4px solid red";
 
       } else { 
-        counter = counter + 2;
+        counter = counter + 1;
          document.getElementById('score-box').style.display= "block";
          document.getElementById('image-three').style.border= '4px solid green';
          
@@ -171,7 +186,7 @@ function inputCheckThree(){
   
 
   function moveThree() {
-    return window.location = "";
+    document.getElementById('');
   };
 
 function buttonThree() {

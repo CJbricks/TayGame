@@ -35,6 +35,7 @@ a:hover {
 }
 
 .quizbox {
+    width: 100%;
     text-align: center;
     margin-top: 10px;
     margin-left: 50px;
@@ -83,9 +84,6 @@ a:hover {
     font-size: 16px;
     font-weight: 600;
     margin-right: 5%;
-    
-    
-    
   }
   button:hover {
     cursor: pointer;
@@ -147,6 +145,7 @@ display: none;
   justify-content: center;
   display: inline-flex;
   
+  
 }
 
 .avatar-one-img, .avatar-two-img, .avatar-three-img {
@@ -161,6 +160,12 @@ display: none;
 
 .avatar-one-img:hover, .avatar-two-img:hover, .avatar-three-img:hover {
   cursor: pointer;
+}
+
+.rule-box {
+  text-align: center;
+  font-family: 'press start 2p', Arial, Helvetica, sans-serif;
+
 }
 
 
