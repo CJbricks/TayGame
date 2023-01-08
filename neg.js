@@ -2,9 +2,9 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'max scherzer';
-let keyTwo = 'francisco lindor';
-let keyThree = 'pete alonso';
+let keyOne = 'mookie betts';
+let keyTwo = 'freddie freeman';
+let keyThree = 'max muncy';
 
 let avOne = './images/hintone.png';
 let avTwo = './images/hinttwo.png';
@@ -166,6 +166,10 @@ function inputCheckThree(){
 
 
  /* generates counter after checking third score */ 
+/*function charge(){
+  let audio = "./images/charge.mp3"
+  counter === 3 ? audio.play() : audio.play();
+}*/
   function answerThree(){
     const ansInputThree = document.getElementById('textbox-three').value.toLowerCase();
     
@@ -180,7 +184,6 @@ function inputCheckThree(){
        }
        console.log(counter);
        createCounter();
-       
   };
   
   
@@ -189,8 +192,6 @@ function inputCheckThree(){
     document.getElementById('');
   };
 
-function buttonThree() {
-  document.getElementById('nobox-two').style.display = 'none';
-  document.getElementById('yesbox-two').style.display = 'none';
-};
+
+ 
 
