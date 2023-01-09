@@ -2,9 +2,9 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'mookie betts';
-let keyTwo = 'freddie freeman';
-let keyThree = 'max muncy';
+let keyOne = 'juan uribe';
+let keyTwo = 'corey dickerson';
+let keyThree = 'raimel tapia';
 
 let avOne = './images/hintone.png';
 let avTwo = './images/hinttwo.png';
@@ -93,12 +93,30 @@ function inputCheck(){
    return input == keyOne ? console.log('True') : console.log("False");
  };
 
+ /* If failed answer this reveals the palyers name*/
+ 
+ function failedAnswerOne() {
+  document.getElementById('failed-answer-one').innerHTML= `${keyOne}`;
+};
+
+function failedAnswerTwo() {
+  document.getElementById('failed-answer-two').innerHTML= `${keyTwo}`;
+};
+
+function failedAnswerThree() {
+  document.getElementById('failed-answer-three').innerHTML= `${keyThree}`;
+};
+
  /* Checks answer and adds to counter move to next quizbox */
+
+
+
   function answer(){
     
     const ansInput = document.getElementById('textbox').value.toLowerCase();
      if (ansInput !== keyOne) {
       document.getElementById('image').style.border= '4px solid red';
+      failedAnswerOne();
       } else {
         counter = counter + 1;
         document.getElementById('image').style.border= '4px solid green';
@@ -134,6 +152,8 @@ function inputCheckTwo(){
     const ansInputTwo = document.getElementById('textbox-two').value.toLowerCase();
       if (ansInputTwo.replace(/[^a-zA-Z0-9 ]/g, '') !== keyTwo) { 
         document.getElementById('image-two').style.border= '4px solid red';
+        failedAnswerTwo();
+
        } else {
         counter = counter + 1;
         document.getElementById('image-two').style.border= '4px solid green';
@@ -175,6 +195,7 @@ function inputCheckThree(){
     
       if (ansInputThree.replace(/[^a-zA-Z0-9 ]/g, '') !== keyThree) {
         document.getElementById('image-three').style.border= "4px solid red";
+        failedAnswerThree();
 
       } else { 
         counter = counter + 1;
@@ -186,12 +207,3 @@ function inputCheckThree(){
        createCounter();
   };
   
-  
-
-  function moveThree() {
-    document.getElementById('');
-  };
-
-
- 
-

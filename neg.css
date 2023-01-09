@@ -170,5 +170,12 @@ display: none;
 
 .charge {
   display: none;
+  justify-content: center;
+}
+
+.result, .result-two, .result-three {
+  display: block;
+  text-align: left;
+  margin-left: 12%;
 }
 
