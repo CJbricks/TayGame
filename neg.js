@@ -2,9 +2,9 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'juan uribe';
-let keyTwo = 'corey dickerson';
-let keyThree = 'raimel tapia';
+let keyOne = 'JOSH BELL';
+let keyTwo = 'YU DARVISH';
+let keyThree = 'MIKE CLEVINGER';
 
 let avOne = './images/hintone.png';
 let avTwo = './images/hinttwo.png';
@@ -89,7 +89,7 @@ function createCounter(){
 /* First quiz box */
 /* log to console to check if input is working on button */
 function inputCheck(){
-  const input =  document.getElementById('textbox').value.toLowerCase();
+  const input =  document.getElementById('textbox').value.toUpperCase();
    return input == keyOne ? console.log('True') : console.log("False");
  };
 
@@ -113,7 +113,7 @@ function failedAnswerThree() {
 
   function answer(){
     
-    const ansInput = document.getElementById('textbox').value.toLowerCase();
+    const ansInput = document.getElementById('textbox').value.toUpperCase();
      if (ansInput !== keyOne) {
       document.getElementById('image').style.border= '4px solid red';
       failedAnswerOne();
@@ -143,13 +143,13 @@ function clearButton() {
 
 /* Second quiz box */
 function inputCheckTwo(){
-  const inputTwo =  document.getElementById('textbox-two').value.toLowerCase();
+  const inputTwo =  document.getElementById('textbox-two').value.toUpperCase();
    return inputTwo.replace(/[^a-zA-Z0-9 ]/g, '') == keyTwo ? console.log('True') : console.log("False");
    
  };
 
   function answerTwo(){
-    const ansInputTwo = document.getElementById('textbox-two').value.toLowerCase();
+    const ansInputTwo = document.getElementById('textbox-two').value.toUpperCase();
       if (ansInputTwo.replace(/[^a-zA-Z0-9 ]/g, '') !== keyTwo) { 
         document.getElementById('image-two').style.border= '4px solid red';
         failedAnswerTwo();
@@ -179,7 +179,7 @@ function buttonTwo() {
   
 /* Third quiz box */
 function inputCheckThree(){
-  const inputThree =  document.getElementById('textbox-three').value.toLowerCase();
+  const inputThree =  document.getElementById('textbox-three').value.toUpperCase();
    return inputThree.replace(/[^a-zA-Z0-9 ]/g, '') == keyThree ? console.log('True') : console.log("False");
    
  };
@@ -191,7 +191,7 @@ function inputCheckThree(){
   counter === 3 ? audio.play() : audio.play();
 }*/
   function answerThree(){
-    const ansInputThree = document.getElementById('textbox-three').value.toLowerCase();
+    const ansInputThree = document.getElementById('textbox-three').value.toUpperCase();
     
       if (ansInputThree.replace(/[^a-zA-Z0-9 ]/g, '') !== keyThree) {
         document.getElementById('image-three').style.border= "4px solid red";
