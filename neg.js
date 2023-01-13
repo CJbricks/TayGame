@@ -2,11 +2,11 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'JOSH BELL';
-let keyTwo = 'YU DARVISH';
-let keyThree = 'MIKE CLEVINGER';
+let keyOne = 'KEN GRIFFEY JR';
+let keyTwo = 'JOEY VOTTO';
+let keyThree = 'AROLDIS CHAPMAN';
 
-let avOne = './images/hintone.png';
+let avOne = './images/hint.jpeg';
 let avTwo = './images/hinttwo.png';
 let avThree = './images/hintthree.png';
 

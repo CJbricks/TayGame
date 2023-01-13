@@ -5,6 +5,7 @@ html {
   align-items: center;
   background-size: cover;
   font-family: 'press start 2p', Arial, Helvetica, sans-serif;
+  background-color: white;
   
 }
 
@@ -18,17 +19,22 @@ a:hover {
 
 .center-body {
   width: 75%;
-  margin-left: 12%;
+  margin-left: 8%;
   text-align: center;
   justify-content: center;
-/* border: 1px solid black; */
+  border: 1px solid white; 
+  padding-bottom: 5%;
+  padding-left: 5%;
   padding-right: 5%;
+  background-color: whitesmoke;
+  
 }
 
 .banner {
   height: 75%;
-  width: 85%;
+  width: 90%;
   margin-bottom: 3%;
+  margin-right: 6%;
   display: flexbox;
 }
 
@@ -37,7 +43,7 @@ a:hover {
 }
 
 .quizbox {
-    width: 100%;
+    width: 88%;
     text-align: center;
     margin-top: 10px;
     margin-left: 50px;
@@ -53,7 +59,7 @@ a:hover {
     margin-top: 25px;
     object-fit: fit;
     border-radius: 5px;
-    box-shadow: -15px 8px #351c75;
+  /*  box-shadow: -15px 8px #351c75; */
   }
 
   .blist:hover, .image-two:hover, .image-three:hover {
