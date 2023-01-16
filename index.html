@@ -7,7 +7,7 @@
     <title>StatSheet</title>
     <link href= "neg.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="./neg.js"></script>
+    
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -19,13 +19,13 @@
 
 <body>
 
-    <!-- audio box display hidden-->
+    <!-- 
   <div id="chargebox" class="charge">
     <audio controls autoplay>
       <source src="./images/charge.mp3" type="audio/mpeg">
     </audio>
   </div>
-
+  audio box display hidden-->
   
   <div class="center-body">
   <div clas="topbox">
@@ -56,7 +56,7 @@
              
           </div>
           <label class="label" for="textbox"></label>
-          <input class ="letters" type="text" id="textbox" name="textbox" value="..."></input>
+          <input class ="letters" type="text" id="textbox" name="textbox" placeholder="Enter Player Full Name"></input>
           
           <button  onClick="inputCheck(); answer(); nextBox();" type="button" id="answerbutton" >Answer</button>
           <p class="result" id="failed-answer-one"></p>
@@ -81,7 +81,7 @@
       <div>
         <div class="avatar-two" id="avatar-two"><img src="./images/avat-id.png" class="avatar-two-img" id="avatar-two-id" onClick="hintTwo();"></div>
         <label class="label-two" for="textbox-two"></label>
-        <input class ="letters-two" type="text" id="textbox-two" name="textbox-two" value=""></input>
+        <input class ="letters-two" type="text" id="textbox-two" name="textbox-two" placeholder="Enter Player Full Name"></input>
         <button class="button-two" onClick="inputCheckTwo(); answerTwo(); thirdBox();"type="button" id="answerbutton-two"  >Answer</button>
         <p class="result-two" id="failed-answer-two"></p>
        <!-- <button class="button-two" type="button" id="clearbutton-two" onClick="buttonTwo()">Try again</button> -->
@@ -103,7 +103,7 @@
     <div>
       <div class="avatar-three" id="avatar-three"><img src="./images/avat-id2.png" class="avatar-three-img" id="avatar-three-id" onClick="hintThree();"></div>
       <label class="label" for="textbox"></label>
-      <input class ="letters-three" type="text" id="textbox-three" name="textbox" value=""></input>
+      <input class ="letters-three" type="text" id="textbox-three" name="textbox" placeholder="Enter Player Full Name"></input>
       <button  onClick="inputCheckThree(); answerThree();"type="button" id="answerbutton-three" >Answer</button>
       <p class="result-three" id="failed-answer-three"></p>
     <!-- <button  type="button" id="clearbuttonThree" onClick="clearButtonThree()">Try again</button> -->
@@ -122,7 +122,7 @@
   </div>   
 </div>
 
-
+<script src="./neg.js"></script>
 </body>
 <footer><div class="footer animate__animated animate__backInLeft"><p><a href="https://www.youtube.com/watch?v=mpRQ35kUTdA">Here's</a> how you play.</p></div></footer>
 

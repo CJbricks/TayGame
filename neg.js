@@ -2,13 +2,15 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'KEN GRIFFEY JR';
-let keyTwo = 'JOEY VOTTO';
-let keyThree = 'AROLDIS CHAPMAN';
+let keyOne = 'DUSTY BAKER';
+let keyTwo = 'ICHIRO SUZUKI';
+let keyThree = 'JUAN SOTO';
 
 let avOne = './images/hint.jpeg';
 let avTwo = './images/hinttwo.png';
 let avThree = './images/hintthree.png';
+
+
 
 /* animating.css jquery for buttons */
 $(document).ready(function(){
@@ -93,6 +95,7 @@ function inputCheck(){
    return input == keyOne ? console.log('True') : console.log("False");
  };
 
+
  /* If failed answer this reveals the palyers name*/
  
  function failedAnswerOne() {
@@ -135,11 +138,17 @@ function failedAnswerThree() {
     return window.location = "";
   };
 
-/* Clear button for original answer indicator */
-function clearButton() {
-  document.getElementById('image').style.display = '2px solid #351c75';
-  
-};
+  /* Enter button to submit answer */
+  const input = document.getElementById('textbox');
+
+  input.addEventListener('keyup', (e) => {
+    if (e.keyCode === 13) {
+      console.log("enter") 
+      inputCheck();
+      answer();
+      nextBox();
+     }
+  });
 
 /* Second quiz box */
 function inputCheckTwo(){
@@ -172,10 +181,17 @@ function inputCheckTwo(){
     return window.location = "";
   };
 
-function buttonTwo() {
-  document.getElementById('nobox-two').style.display = 'none';
-  document.getElementById('yesbox-two').style.display = 'none';
-};
+ /* Enter button to submit answer */
+ const inputTwo = document.getElementById('textbox-two');
+
+ inputTwo.addEventListener('keyup', (e) => {
+   if (e.keyCode === 13) {
+     console.log("enter x 2") 
+     inputCheckTwo();
+     answerTwo();
+     thirdBox();
+    }
+ });
   
 /* Third quiz box */
 function inputCheckThree(){
@@ -206,4 +222,15 @@ function inputCheckThree(){
        console.log(counter);
        createCounter();
   };
+
+  const inputThree = document.getElementById('textbox-three');
+
+ inputThree.addEventListener('keyup', (e) => {
+   if (e.keyCode === 13) {
+     console.log("enter x 2") 
+     inputCheckThree();
+     answerThree();
+  
+    }
+ });
   
