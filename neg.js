@@ -2,11 +2,11 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'DUSTY BAKER';
-let keyTwo = 'ICHIRO SUZUKI';
-let keyThree = 'JUAN SOTO';
+let keyOne = 'DANIEL BARD';
+let keyTwo = 'KRIS BRYANT';
+let keyThree = 'EZEQUIEL TOVAR';
 
-let avOne = './images/hint.jpeg';
+let avOne = './images/hint.PNG';
 let avTwo = './images/hinttwo.png';
 let avThree = './images/hintthree.png';
 
