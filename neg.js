@@ -2,9 +2,9 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'DANIEL BARD';
-let keyTwo = 'KRIS BRYANT';
-let keyThree = 'EZEQUIEL TOVAR';
+let keyOne = 'BJ UPTON';
+let keyTwo = 'GEORGE SPRINGER';
+let keyThree = 'JOSH DONALDSON';
 
 let avOne = './images/hint.PNG';
 let avTwo = './images/hinttwo.png';
@@ -88,12 +88,7 @@ function createCounter(){
 };
 
 
-/* First quiz box */
-/* log to console to check if input is working on button */
-function inputCheck(){
-  const input =  document.getElementById('textbox').value.toUpperCase();
-   return input == keyOne ? console.log('True') : console.log("False");
- };
+
 
 
  /* If failed answer this reveals the palyers name*/
@@ -112,12 +107,17 @@ function failedAnswerThree() {
 
  /* Checks answer and adds to counter move to next quizbox */
 
-
+/* First quiz box */
+/* log to console to check if input is working on button */
+function inputCheck(){
+  const input =  document.getElementById('textbox').value.toUpperCase();
+   return input == keyOne.replace(/[^a-zA-Z0-9 ]/g, '') ? console.log('True') : console.log("False");
+ };
 
   function answer(){
     
     const ansInput = document.getElementById('textbox').value.toUpperCase();
-     if (ansInput !== keyOne) {
+     if (ansInput.replace(/[^a-zA-Z0-9 ]/g, '') !== keyOne) {
       document.getElementById('image').style.border= '4px solid red';
       failedAnswerOne();
       } else {
