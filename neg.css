@@ -118,7 +118,6 @@ a:hover {
 
   p {
     padding: 15px;
-    
   }
 
 
@@ -210,6 +209,17 @@ display: none;
     margin-bottom: 50px;
     color: red;
   }
+
+  .quizbox-two, .quizbox-three {
+    width: 75%;
+    display: block;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-bottom: 5%;
+    color: red;
+    display: none;
+  }
   
   .blist, .image-two, .image-three {
     height: 120%;
@@ -222,7 +232,38 @@ display: none;
   }
 
   .squad {
-    margin-left: 10%;
+    margin-left: 28%;
   }
+
+  .hideme {
+    display: none;
+  }
+  
+
+  .avatar-one-img {
+    height: 300%;
+    width: 300%;
+    margin-bottom: 85%;
+  }
+
+  .avatar-two-img, .avatar-three-img {
+    height: 300%;
+    width: 300%;
+    margin-bottom: 85%;
+  }
+
+  .letters,.letters-two, .letters-three {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    
+   }
+
+   .banner {
+    height: 85%;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  
 }
 
