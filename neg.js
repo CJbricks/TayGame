@@ -2,11 +2,11 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'BJ UPTON';
-let keyTwo = 'GEORGE SPRINGER';
-let keyThree = 'JOSH DONALDSON';
+let keyOne = 'JOSE RAMIREZ';
+let keyTwo = 'CAL RALEIGH';
+let keyThree = 'FRANCISCO LINDOR';
 
-let avOne = './images/hint.png';
+let avOne = './images/hintone.png';
 let avTwo = './images/hinttwo.png';
 let avThree = './images/hintthree.png';
 
