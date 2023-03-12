@@ -2,9 +2,9 @@ let counter = 0;
 let scoreBox = true;
 let errorMessage = "OoOoOoOooops";
 
-let keyOne = 'JOSE RAMIREZ';
-let keyTwo = 'CAL RALEIGH';
-let keyThree = 'FRANCISCO LINDOR';
+let keyOne = 'DANSBY SWANSON';
+let keyTwo = 'FREDDIE FREEMAN';
+let keyThree = 'WILL SMITH';
 
 let avOne = './images/hintone.png';
 let avTwo = './images/hinttwo.png';
