@@ -37,8 +37,6 @@ a:hover {
   margin-left: 5%;
   margin-bottom: 3%;
   margin-right: 5%;
-  display: flexbox;
-  border: 1px solid red;
 }
 
 .animate__animated.animate__jackInTheBox {
